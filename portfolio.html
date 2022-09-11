@@ -36,7 +36,7 @@
                     <li class="navigation__item"><a href="#" class="navigation__link link">Контакты</a></li>
                 </ul>
             </nav>
-            <ul class="connect list">
+            <ul class="connect__list list">
                 <li class="connect__item item">
                     <a href="mailto:info@devstudio.com" class="connect__mail  link"><svg class="connect__icon" width="16"
                             height="12">
@@ -75,12 +75,32 @@
                         <li class="filter__item">
                             <button type="button" class="filter__btn">Маркетинг</button>
                         </li>
-                    </ul>     -->
+                    </ul>     
                            <!--projekt-->
                 <ul class="projekt__list list">
                     <li class="projekt__item">
                         <a href="#" class="projekt__link link">
-                            <div class="projekt__ghostly"><img src="images. port/img port(1).jpg" alt="технокряк" width="370">
+                            <div class="projekt__ghostly">
+                                <picture>
+                                    <source
+                            srcset="
+                               images. port/one/img (mob1x).jpg 1x, 
+                               images. port/one/img (mob2x).jpg 2x 
+                            "
+                            media="(min-width:1200px)"
+                             srcset="
+                               ./images. port/one/img (tabl1x).jpg  1x, 
+                               ./images. port/one/img (tabl2x).jpg  2x 
+                            "
+                            media="(min-width:768px)"
+                             srcset="
+                               ./images. port/one/img (desk1x).jpg  1x, 
+                               ./images. port/one/img (desk2x).jpg  2x 
+                            "
+                            media="(max-width:767px)"
+                            />
+                            <img src="./images. port/one/img (mob1x).jpg" alt="технокряк" width="450">
+                                </picture>
                             <p class="projekt__ghostly-text">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                 получить
@@ -93,9 +113,29 @@
                             </div>
                         </a>
                     </li>
-                    <li class="projekt-item">
+                    <li class="projekt__item">
                         <a href="#" class="projekt__link link">
-                            <div  class="projekt__ghostly"><img src="images. port/img port(2).jpg" alt=" постер баскетболисты" width="370">
+                            <div  class="projekt__ghostly">
+                                     <picture>
+                                    <source
+                            srcset="
+                               images. port/two/img (mob1x).jpg 1x, 
+                               images. port/two/img (mob2x).jpg 2x 
+                            "
+                            media="(min-width:1200px)"
+                             srcset="
+                               ./images. port/two/img (tabl1x).jpg  1x, 
+                               ./images. port/two/img (tabl2x).jpg  2x 
+                            "
+                            media="(min-width:768px)"
+                             srcset="
+                               ./images. port/two/img (desk1x).jpg  1x, 
+                               ./images. port/two/img (desk2x).jpg  2x 
+                            "
+                            media="(max-width:767px)"
+                            />
+                            <img src="./images. port/two/img (mob1x).jpg" alt=" постер баскетболисты" width="450">
+                                </picture>
                                 <p class="projekt__ghostly-text"></p>
                             </div>
                             <div class="after__projekt">

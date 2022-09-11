@@ -168,14 +168,33 @@
         </div>
     </section> 
       <!--сотрудники-employees-->
-      <section class="employees">
+      <section class="employees"> 
         <div class=" container ">
            <h2 class="employees__title">
                 Наша команда
             </h2>
                 <ul class="employees__list list">
                     <li class="employees__item">
-                        <img src="images/img(4).jpg" alt="игорь" width="270" height="260">
+                        <picture>
+                            <source
+                            srcset="
+                               ./images/igor/img (desk1x).jpg  1x, 
+                               ./images/igor/img (desk2x).jpg  2x 
+                            "
+                            media="(min-width:1200px)"
+                             srcset="
+                               ./images/igor/img (tab1x).jpg  1x, 
+                               ./images/igor/img (tab2x).jpg  2x 
+                            "
+                            media="(min-width:768px)"
+                             srcset="
+                               ./images/igor/img (mob1x).jpg  1x, 
+                               ./images/igor/img (mob2x).jpg  2x 
+                            "
+                            media="(max-width:767px)"
+                            />
+                            <img src="images/igor/img (mob1x).jpg" alt="игорь" width="450" height="460">
+                        </picture>
                         <div class=" employees__container  ">
                             <h3 class="employees__after-title">Игорь Демьяненко</h3>
                             <p lang="en" class="employees__text">Product Designer</p>
@@ -212,7 +231,26 @@
                         </div>
                     </li>
                     <li class="employees__item">
-                        <img src="images/img(5).jpg" alt="ольга" width="270" height="260">
+                         <picture>
+                            <source
+                            srcset="
+                               ./images/olga/img (desk1x).jpg  1x, 
+                               ./images/olga/img (desk2x).jpg  2x 
+                            "
+                            media="(min-width:1200px)"
+                             srcset="
+                               ./images/olga/img (tab1x).jpg  1x, 
+                               ./images/olga/img (tab2x).jpg  2x 
+                            "
+                            media="(min-width:768px)"
+                             srcset="
+                               ./images/olga/img (mob1x).jpg  1x, 
+                               ./images/olga/img (mob2x).jpg  2x 
+                            "
+                            media="(max-width:767px)"
+                            />
+                            <img src="./images/olga/img (mob1x).jpg" alt="ольга" width="450" height="460">
+                        </picture>
                         <div class=" employees__container">
                             <h3 class="employees__after-title">Ольга Репинa</h3>
                             <p lang="en" class="employees__text">Frontend Developer</p>
@@ -249,7 +287,26 @@
                         </div>
                     </li>
                     <li class="employees__item">
-                        <img src="images/img(6).jpg" alt="николай" width="270" height="260">
+                         <picture>
+                            <source
+                            srcset="
+                               ./images/kola/img (desk1x).jpg  1x, 
+                               ./images/kola/img (desk2x).jpg  2x 
+                            "
+                            media="(min-width:1200px)"
+                             srcset="
+                               ./images/kola/img (tab1x).jpg  1x, 
+                               ./images/kola/img (tab2x).jpg  2x 
+                            "
+                            media="(min-width:768px)"
+                             srcset="
+                               ./images/kola/img (mob1x).jpg  1x, 
+                               ./images/kola/img (mob2x).jpg  2x 
+                            "
+                            media="(max-width:767px)"
+                            />
+                            <img src="./images/kola/img (mob1x).jpg" alt="николай" width="450" height="460">
+                        </picture>
                         <div class=" employees__container">
                             <h3 class="employees__after-title">Николай Тарасов</h3>
                             <p lang="en" class="employees__text">Marketing</p>
@@ -286,7 +343,26 @@
                         </div>
                     </li>
                     <li class="employees__item">
-                        <img src="images/img(7).jpg" alt="михаил" width="270" height="260">
+                              <picture>
+                            <source
+                            srcset="
+                               ./images/miha/img (desk1x).jpg  1x, 
+                               ./images/miha/img (desk2x).jpg  2x 
+                            "
+                            media="(min-width:1200px)"
+                             srcset="
+                               ./images/miha/img (tab1x).jpg  1x, 
+                               ./images/miha/img (tab2x).jpg  2x 
+                            "
+                            media="(min-width:768px)"
+                             srcset="
+                               ./images/miha/img (mob1x).jpg  1x, 
+                               ./images/miha/img (mob2x).jpg  2x 
+                            "
+                            media="(max-width:767px)"
+                            />
+                            <img src="./images/miha/img (mob1x).jpg" alt="николай" width="450" height="460">
+                        </picture>
                         <div class=" employees__container">
                             <h3 class="employees__after-title">Михаил Ермаков</h3>
                             <p lang="en" class="employees__text">UI Designer</p>

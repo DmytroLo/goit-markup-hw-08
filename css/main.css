@@ -1255,7 +1255,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .projekt__item {
-    width: calc((100% - 90px) / 4);
+    width: calc((100% - 90px) / 3);
   }
 }
 
