@@ -1,0 +1,49 @@
+:root {
+    --title-text-color: #212121;
+    --background-color: #FFFFFF;
+    --text-white-color: #FFFFFF;
+    --secondary-text-color: #757575;
+    --accent-text-color: #2196F3;
+    --text-logo-color: #000000;
+    --footer-hero-background-color: #2F303A;
+    --secondary-background-color: #F5F4FA;
+    --features-background-color: #E5E5E5;
+}
+body {
+    font-family: "Roboto", "Open Sans", sans-serif;
+     color: var(--title-text-color);
+    background-color: var(--background-color);
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    
+}
+%flex-da {
+    display: flex;
+    align-items: center;
+}
+
+%flex-daj {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin font ($fw, $fs, $lh) {
+    font-weight:$fw ;
+    font-size: $fs;
+    line-height: $lh;
+}
+@mixin mobile {
+    @media screen and (min-width: 480px) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media screen and (min-width : 1200px) {
+        @content;
+    }
+}

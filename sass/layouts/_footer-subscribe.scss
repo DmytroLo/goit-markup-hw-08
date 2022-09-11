@@ -1,0 +1,50 @@
+.subscribe__container {
+    margin-left: 93px;
+}
+
+.subscribe__text {
+    @include font(700, 14px, 1.14);
+    text-transform: uppercase;
+    color: var(--background-color);
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.subscribe__input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    resize: none;
+    outline-color: var(--accent-text-color);
+    background-color: var(--footer-hero-background-color);
+    color: var(--background-color);
+    padding: 16px 15px;
+    &::placeholder {
+            @include font(400, 16px, 1.25);
+            @extend %flex-da;
+            letter-spacing: 0.03em;
+            color: rgba(255, 255, 255, 0.6);
+            padding-left: 15px;
+        }
+}
+.form__button {
+    display: flex;
+}
+
+.subscribe__button {
+    position: relative;
+    @include font(700, 16px, 1.88);
+    margin-left: 12px;
+    letter-spacing: 0.06em;
+    color: var(--background-color);
+    background-color: var(--accent-text-color);
+    padding-left: 29px;
+    padding-right: 62px;
+}
+
+.subscribe__soc-icon {
+    position: absolute;
+    margin-left: 10px;
+}

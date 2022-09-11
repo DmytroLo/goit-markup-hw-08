@@ -1,0 +1,75 @@
+   .check__file {
+       background: var(--background-color);
+       border-radius: 4px;
+       margin-top: 20px;
+   }
+  .check__text {
+    @include font(400, 14px, 1.71);
+      color: var(--secondary-text-color);
+      @extend %flex-da;
+  }
+
+  .check__accent-text {
+    @include font(400, 14px, 1.71);
+      text-decoration-line: underline;
+      color: var(--accent-text-color);
+  }
+
+  .check__text .check__span {
+      width: 16px;
+      height: 15px;
+      border: 2px solid;
+      border-radius: 3px;
+      margin-right: 7px;
+      @extend %flex-daj;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .check__icon {
+      fill: transparent;
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .input__check:checked + .check__text .check__span {
+      background-color: var(--accent-text-color);
+      border: none;
+  }
+
+  .input__check:checked + .check__text .check__icon {
+      fill: var(--background-color);
+  }
+
+  .input__check:focus + .check__text .check__span {
+      border-color: var(--accent-text-color);
+  }
+
+  /* .check-text::before {
+    content: "" ;
+    width: 16px;
+    height: 15px;
+    border: 2px solid;
+    border-radius: 3px;
+    margin-right: 7px;
+}
+.input-check:checked + .check-text::before {
+    background-color: var(--accent-text-color);
+    background-image: url(../images/icon\ check\ \(1\).svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} */
+  .modal__button {
+    @include font(700, 16px, 1.88);
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.88;
+      @extend %flex-daj;
+      text-align: center;
+      letter-spacing: 0.06em;
+      color: var(--background-color);
+      background-color: var(--accent-text-color);
+      padding: 10px 56px;
+      margin-top: 30px;
+  }

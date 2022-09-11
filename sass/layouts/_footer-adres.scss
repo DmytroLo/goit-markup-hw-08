@@ -1,0 +1,39 @@
+   .footer {
+       background-color: var(--footer-hero-background-color);
+       padding: 60px 0;
+    &__container {
+        display: flex;
+        align-items: baseline;
+    }
+}
+ .adress {
+     margin-top: 20px;
+ }
+   .adress__logo {
+       font-family: 'Raleway', sans-serif;
+        @include font(700, 26px, 1.19);
+       color: var(--text-white-color);
+       text-decoration: none;
+   }
+   .adress__span {
+       font-family: 'Raleway';
+       font-style: normal;
+        @include font(700, 26px, 1.19);
+       color: var(--accent-text-color);
+}
+.adress__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+   .adress__link {
+       font-family: 'Roboto';
+       font-style: normal;
+        @include font(400, 14px, 1.71);
+       color: var(--text-white-color);
+       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+       &:hover,
+       &:focus {
+            color: var(--accent-text-color);
+        }
+   }
+
+   

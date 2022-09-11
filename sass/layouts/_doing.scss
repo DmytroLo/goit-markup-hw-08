@@ -1,0 +1,34 @@
+.doing {
+    @media screen and (max-width: 1200px) {
+          display: none;
+    
+        }
+}
+.doing__list {
+    display: flex;
+    position: relative;   
+}
+
+.doing__item:not(:last-child) {
+    margin-right: auto;
+}
+.doing__title {
+    @include font(700, 36px, 1.16);
+    text-align: center;
+    color: var(--title-text-color);
+    margin-bottom: 50px;
+}
+.doing__text {
+    position: absolute;
+    text-align: center;
+    @extend %flex-daj;
+    bottom: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    height: 70px;
+    font-family: 'Roboto';
+    font-style: normal;
+    @include font(700, 14px, 1.14);
+    text-transform: uppercase;
+    color: var(--background-color);
+}
