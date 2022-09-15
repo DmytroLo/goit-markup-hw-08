@@ -4,11 +4,12 @@
      @extend %flex-da;
         }
 }
-@include tablet {
-    @media screen and (min-width: 768px) {
-       
-    }
-}
+ @media screen and (max-width: 1200px) {
+     .header__container{
+        align-items: center
+
+     }
+ }
 .navigation {
     @extend %flex-da;
     
@@ -34,7 +35,10 @@
     @extend %flex-da;
     margin-left: 93px;
     flex-wrap: wrap;
-  
+    @media screen and (max-width: 1200px){
+        margin-left: 71px;
+
+    }
 }
  @media screen and (max-width : 768px) {
     .navigation__list{
@@ -84,21 +88,26 @@
      }
  }
 
-     @media screen and (min-width: 768px) {
-      .connect__list {
-     flex-wrap: wrap;
-      }
- }
+
  
 .connect__list {
     display: flex;
     margin-left: auto;
     align-items: flex-end;
 }
-
+   @media screen and (max-width: 1200px) {
+       .connect__list {
+           flex-direction: column;
+         margin-right: 0;  
+       }
+   }
 .connect__item.item + .item {
     margin-left: 50px;
+    @media screen and (max-width: 1200px) {
+                margin-left: 0;
+            }
 }
+  
 .connect__mail,
 .connect__tel {
     padding-top: 32px;
@@ -111,6 +120,19 @@
 
 }
 
+    @media screen and (max-width: 1200px) {
+        .connect__mail{
+                padding: 0;
+              
+}           
+}
+        @media screen and (max-width: 1200px) {
+            .connect__tel {
+                padding: 0;
+                padding-top: 10px;
+                margin-right: 18px;
+            }
+        }
 .connect__mail:hover,
 .connect__mail:focus {
     color: var(--accent-text-color);

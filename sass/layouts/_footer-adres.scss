@@ -1,11 +1,29 @@
    .footer {
        background-color: var(--footer-hero-background-color);
        padding: 60px 0;
-    &__container {
-        display: flex;
+   }
+    .footer__container {
         align-items: baseline;
+    @media screen and (min-width: 1200px) {
+         display: flex;
+        margin-left: 76px;
     }
+    }
+
+.adress__container {
+    text-align: center;
+    @media screen and (min-width: 768px) {
+        position: absolute;
+      
+      
 }
+        @media screen and (min-width: 1200px) {
+            position: relative;
+          
+        }
+}
+
+
  .adress {
      margin-top: 20px;
  }

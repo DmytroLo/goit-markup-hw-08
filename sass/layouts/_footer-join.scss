@@ -1,8 +1,24 @@
 .join__container {
     margin-left: 70px;
-
+@media screen and (max-width: 768px) {
+        margin-left: 0;
+        text-align: center;
+        margin-top: 60px;
+       
+        }
 }
-
+.join__container {
+    @media screen and (max-width: 1200px) {
+        text-align: center;
+      
+    }
+}
+.join__container {
+    @media screen and (max-width: 768px) {
+        text-align: center;
+      
+    }
+}
 .join__soc-list {
     @extend %flex-daj;
     gap: 10px;

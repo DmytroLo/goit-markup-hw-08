@@ -55,7 +55,6 @@
 
       .projekt__title {
         @include font(700, 18px, 2);
-          letter-spacing: 0.06em;
           color: var(--title-text-color);
       }
 
