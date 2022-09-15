@@ -16,11 +16,11 @@
  .hero {
         @include mobile {
             background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-        url(../images/Img\ \(hero-mob\).jpg);
+        url(../images/Img\ \(heromob\).jpg);
         }
                  @include tablet {
                      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-                         url(../images/Img\ \(hero-tabl\).jpg);
+                         url(../images/Img\ \(herotabl\).jpg);
         }
                          @include desktop {
                              background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
